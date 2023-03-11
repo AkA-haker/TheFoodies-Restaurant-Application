@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+
+    android:elevation="10dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/text_view_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/card_view_image_container"
+            android:layout_toLeftOf="@id/card_view_image_container"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#272727"
+            android:textSize="18sp"
+            tools:text="1.Item Title" />
+
+        <TextView
+            android:id="@+id/text_view_item_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_item_name"
+            android:layout_marginTop="8dp"
+            android:layout_toStartOf="@id/card_view_image_container"
+            android:layout_toLeftOf="@id/card_view_image_container"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#777777"
+            android:textSize="14sp"
+            tools:text="This is the description that i will write very long for observing how the screen look like in multiple line " />
+
+        <RatingBar
+            android:id="@+id/rating_bar_rating"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_item_description"
+            android:layout_marginTop="5dp"
+            tools:rating="3.5f" />
+
+        <TextView
+            android:id="@+id/text_view_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rating_bar_rating"
+            android:layout_marginTop="5dp"
+            tools:text="Price" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_image_container"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            app:cardCornerRadius="16dp">
+
+            <ImageView
+                android:id="@+id/image_view_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/broccoli_and_cucumber_soup" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
