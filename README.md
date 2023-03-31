@@ -1,6 +1,6 @@
 # TheFoodies-Restaurant-Application
 A restaurant menu  display app
-<img src="images/res-1" width="100">
+<img src="images/res-1.png" width="100">
 
 <!-- ![image1](images/res-1.png)
 ![image1](images/res-2.png)
